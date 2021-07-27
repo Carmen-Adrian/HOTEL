@@ -1,0 +1,21 @@
+.mapa{
+
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;     
+    width: 450px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 0;
+  }
+  
+  .texto-map{
+    float: right;
+    margin-right: 50px;
+    margin-top: 0;
+  }

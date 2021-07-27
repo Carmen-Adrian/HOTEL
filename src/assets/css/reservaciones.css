@@ -1,0 +1,67 @@
+/*container*/
+body{
+    margin: 0;
+    padding: 0;
+    
+  }
+  /*MAIN*/
+  .main{
+    background: #199999;
+    margin: 0;
+    padding: 20px;
+    width: auto;
+  }
+.container{
+    width: auto;
+    margin:  auto;
+    text-align: center;
+    color: rgb(116, 64, 64);
+    padding: 1px;
+   
+  }
+  
+  .main h2{
+    font-family: 'Berkshire Swash', cursive;
+    color: #f7c5d9;
+    font-size: 300%;
+    text-shadow: 3px 3px 2px #000;
+  }
+  
+  /*FORM*/
+  .main form{
+    background-color: rgba(0,0,0,0.8);
+    text-align: left;
+    padding: 20px;
+    font-size: 1.3em;
+    
+      
+  }
+  
+  /*output*/
+  .cajas{
+  height: 10px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid #5878ca;
+  color: #d33838;
+  }
+  
+
+  /*botón*/
+  .btn{
+    height: 40px;
+    padding: 10px 40px;
+    border-radius: 7px;
+    background-color: #000;
+    color: #9ABCBD;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+  }
+  
+  .btn:hover{
+    box-shadow: 3px 3px 5px #000;
+    background-color: #FE0069;
+    color: #000;
+  }
