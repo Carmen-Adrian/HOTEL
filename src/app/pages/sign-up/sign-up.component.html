@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="assets/img/hotel.ico">
+    <title>Hotel Posada Del Ángel Villahermosa</title>
+    <link rel="stylesheet" href="sign-up.component.css">
+   
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="title"><h1 id="title-text">Bienvenido<br>Crea una cuenta</h1></div>
+      <div class="double-field show-field" id="signUp-only">
+        <div class="input-div"><p>Nombre:</p><input type="text" name="name" maxlength="30"></div>
+        <span class="spacing"></span>
+        <div class="input-div"><p>Usuario:</p><input type="text" name="username" maxlength="30"></div>
+      </div>
+      <div class="input-div"><p>Correo:</p><input type="email" name="email"></div>
+      <div class="input-div"><p>Contraseña:</p><input type="password" name="password"></div>
+      <div class="input-div show-field" id="signUp-only">
+        <p>Confirme su contraseña:</p>
+        <input type="password" name="password_confirmation">
+      </div>
+      <button id="button" routerLink="/login">Sign In</button>
+    </form>
+  </div>
+    <script src="/src/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+</html>

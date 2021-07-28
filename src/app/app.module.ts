@@ -11,7 +11,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { MetodoPagoComponent } from './pages/metodo-pago/metodo-pago.component';
+import { UbicacionComponent } from './pages/ubicacion/ubicacion.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { HttpClientModule} from '@angular/common/http'
     FooterComponent,
     HomeComponent,
     ContactoComponent,
+    SignUpComponent,
+    MetodoPagoComponent,
+    UbicacionComponent,
   ],
   imports: [
     BrowserModule,

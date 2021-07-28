@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="reservacion.component.css">
              
   </head>
-  <body class="top-fixed" >
-    <div class="smart-wrap"class="top-fixed"  >
+  <body  >
+    <div class="smart-wrap" >
       <div class="smart-forms smart-container wrap-2" >
        
         <div class="form-header header-primary" >
@@ -21,7 +21,7 @@
             <div class="section">
               <label for="guestname" class="field-label">Ingrese Su Nombre Por Favor</label>
               <label for="guestname" class="field prepend-icon">
-                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="John Doe/Jane Doe">
+                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="">
                 <span class="field-icon"><i class="fa fa-user"></i></span>  
               </label>
             </div>
@@ -30,7 +30,7 @@
               <div class="section colm colm6">
                 <label for="guestemail" class="field-label">Correo Electronico</label>
                 <label for="guestemail" class="field prepend-icon">
-                  <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="john@something.com">
+                  <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="">
                   <span class="field-icon"><i class="fa fa-envelope"></i></span>  
                 </label>
               </div>
@@ -38,7 +38,7 @@
               <div class="section colm colm6">
                 <label for="guestelephone" class="field-label">Numero Telefonico</label>
                 <label for="guestelephone" class="field prepend-icon">
-                  <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Telephone / Moble Number">
+                  <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="">
                   <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
                 </label>
               </div>
@@ -46,17 +46,17 @@
              
             <div class="frm-row">
               <div class="section colm colm6">
-                <label for="adults" class="field-label">Numbero de personas adultas</label>
+                <label for="adults" class="field-label">Numero de personas adultas</label>
                 <label for="adults" class="field prepend-icon">
-                  <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Number of adults">
+                  <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="">
                   <span class="field-icon"><i class="fa fa-users"></i></span>  
                 </label>
               </div>
                
               <div class="section colm colm6">
-                <label for="children" class="field-label">Numbero de Niños</label>
+                <label for="children" class="field-label">Numero de Niños</label>
                 <label for="children" class="field prepend-icon">
-                  <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Number of children">
+                  <input type="number" id="children" name="children" class="gui-input" required="" placeholder="">
                   <span class="field-icon"><i class="fa fa-users"></i></span>  
                 </label>
               </div>
@@ -66,7 +66,7 @@
               <div class="section colm colm6">
                 <label for="checkin" class="field-label">Dia de llegada</label>
                 <label for="checkin" class="field prepend-icon">
-                  <input type="text" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                  <input  type="date" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
                   <span class="field-icon"><i class="fa fa-calendar"></i></span>  
                 </label>
               </div>
@@ -74,10 +74,30 @@
               <div class="section colm colm6">
                 <label for="checkout" class="field-label">Dia de salida</label>
                 <label for="checkout" class="field prepend-icon">
-                  <input type="text" id="checkout" name="checkout" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                  <input type="date" id="checkout" name="checkout" class="gui-input" required="" placeholder="mm/dd/yyyy">
                   <span class="field-icon"><i class="fa fa-calendar"></i></span>  
                 </label>
               </div>
+            </div>
+
+            <div  class="spacer-t20 spacer-b30">
+              <label for="estadia">Tipo de Habitacion</label>
+              <select for="checkout" class="gui-input">
+                <option value="Individual" label="Individual">
+                <option value="King size" label="King size">
+                <option value="Doble" label="Doble">
+                <option value="Triple" label="Triple">    
+              </select>
+            </div>
+
+            <div  class="spacer-t20 spacer-b30">
+              <label for="estadia">Metodo de Pago</label>
+              <select for="checkout" class="gui-input">
+                
+                <option value="Tarjeta de credito" label="Tarjeta de credito">              
+                <option value="Tarjeta de debito" label="Tarjeta de debito" >
+                <option value="Paypal" label="Paypal">   
+              </select>
             </div>
              
             <div class="spacer-t20 spacer-b30">
@@ -108,19 +128,10 @@
              
              
              
-            <div class="section">
-              <label for="comment" class="field-label">¿Algo más que debamos saber?</label>
-              <label for="comment" class="field prepend-icon">
-                <textarea class="gui-textarea" id="comment" name="comment" placeholder="Háganos saber sobre cualquier necesidad de alojamiento especial "></textarea>
-                <span class="field-icon"><i class="fa fa-comments"></i></span>
-                <span class="input-hint"> 
-                  <strong>Por Favor:</strong> Sea lo más descriptivo posible
-                </span>   
-              </label>
-            </div>                                        
+                                                
           </div>
           <div class="form-footer">
-            <button type="submit" class="button btn-primary">Confirmar reserva</button>
+            <button type="submit" class="button btn-primary">Siguiente</button>
             <button type="reset" class="button">Cancelar</button>
           </div>
            

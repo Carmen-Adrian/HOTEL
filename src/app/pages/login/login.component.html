@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="assets/img/hotel.ico">
+    <link rel="icon"  href="/src/assets/img/hotel.ico">
     <title>Hotel Posada Del Ángel Villahermosa</title>
     <link rel="stylesheet" href="login.component.css">
 </head>
 
-<body class="top-fixed">
-    <div class='box'>
-        <div class='box-form'>
-          <div class='box-login-tab'></div>
-          <div class='box-login-title'>
-            <div class='i i-login'></div><h2>LOGIN</h2>
-          </div>
-          <div class='box-login'>
-            <div class='fieldset-body' id='login_form'>
-          
-                  <p class='field'>
-                <label for='user'>E-MAIL</label>
-                <input type='text' id='user' name='user' title='Username' />
-                <span id='valida' class='i i-warning'></span>
+<body>
+    <section>
+      <div class="container">
+        <div class="user signinBx">
+          <div class="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg" alt="" /></div>
+          <div class="formBx">
+            <form action="">
+              <h2>Sign In</h2>
+              <input type="text" name="" placeholder="Username" />
+              <input type="password" name="" placeholder="Password" />
+              <input type="submit" name="" value="Login" routerLink="/reservacion"/>
+              <p >
+                Don't have an account ?
+                <a routerLink="/sign-up" class="rk-menu__link">Sign Up.</a>
               </p>
-                  <p class='field'>
-                <label for='pass'>PASSWORD</label>
-                <input type='password' id='pass' name='pass' title='Password' />
-                <span id='valida' class='i i-close'></span>
-              </p>
-      
-                <label class='checkbox'>
-                  <input type='checkbox' value='TRUE' title='Keep me Signed in' /> Keep me Signed in
-                </label>
-      <a routerLink="/reservacion">
-                  <input type='submit' id='do_login' value='GET STARTED' title='Get Started' /></a>
-            </div>
+            </form>
           </div>
         </div>
+
       </div>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/form.js"></script>
-</body>
+    </section>
+   
+    <script src="/src/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  </body>
 </html>
