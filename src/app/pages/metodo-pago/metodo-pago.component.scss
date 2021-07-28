@@ -1,54 +1,15 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
-body {
-  min-height: 100%;
-  font-family: 'Open sans', sans-serif;
-}
-
-
-
-/*--------------------
-Botones
---------------------*/
 .btn {
   display: block;
-  background: hsl(86, 76%, 71%);
-  color: hsl(0, 0, 100);
+  background: #00ff00(86, 76%, 71%);
+  color: #fff(0, 0, 100);
   text-decoration: none;
   margin: 20px 0;
   padding: 15px 15px;
   border-radius: 5px;
   position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all .2s ease-in-out;
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
-    border-radius: 5px;
-  }
-
-  &:hover::after {
-    background: hsla(0, 0, 0, 0.1);
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
-  }
-
 }
 
-/*--------------------
-Formulario
---------------------*/
 .form {
-
   fieldset {
     border: none;
     padding: 0;
@@ -77,7 +38,7 @@ Formulario
       display: block;
       text-transform: uppercase;
       font-size: 11px;
-      color: hsla(0, 0, 0, .6);
+      color: #000(0, 0, 0, .6);
       margin-bottom: 5px;
       font-weight: bold;
       font-family: Inconsolata;
@@ -87,13 +48,13 @@ Formulario
     .select {
       width: 100%;
       height: 38px;
-      color: hsl(0, 0, 20);
+      color: (0, 0, 20);
       padding: 10px;
       border-radius: 5px;
       font-size: 15px;
-      outline: none!important;
-      border: 1px solid hsla(0, 0, 0, 0.3);
-      box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+      outline: none !important;
+      border: 1px solid #000(0, 0, 0, 0.3);
+      box-shadow: inset 0 1px 4px #000(0, 0, 0, 0.2);
 
       &.input-cart-number {
         width: 82px;
@@ -127,7 +88,7 @@ Formulario
         padding: 0;
         border: none;
         width: 100%;
-        outline: none!important;
+        outline: none !important;
         top: 6px;
         left: 6px;
         background: none;
@@ -136,47 +97,37 @@ Formulario
           color: transparent;
           text-shadow: 0 0 0 #000;
         }
-
       }
     }
-
-
   }
 
   button {
     width: 100%;
-    outline: none!important;
+    outline: none !important;
     background: linear-gradient(180deg, #49a09b, #3d8291);
     text-transform: uppercase;
     font-weight: bold;
     border: none;
     box-shadow: none;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 2px #000(0, 0, 0, 0.2);
     margin-top: 90px;
 
     & .fa {
       margin-right: 6px;
     }
   }
-
 }
 
-/*--------------------
-Checkout
---------------------*/
 .checkout {
   margin: 150px auto 30px;
   position: relative;
   width: 460px;
-  background: white;
+  background: #fff;
   border-radius: 15px;
   padding: 160px 45px 30px;
-  box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
+  box-shadow: 0 10px 40px #000(0, 0, 0, .1);
 }
 
-/*--------------------
-Tarjeta de Crédito
---------------------*/
 .credit-card-box {
   perspective: 1000;
   width: 400px;
@@ -203,8 +154,8 @@ Tarjeta de Crédito
     font-family: Inconsolata;
     top: 0;
     left: 0;
-    text-shadow: 0 1px 1px hsla(0, 0, 0, 0.3);
-    box-shadow: 0 1px 6px hsla(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px #000(134, 128, 128, 0.3);
+    box-shadow: 0 1px 6px #000(0, 0, 0, 0.3);
 
     &::before {
       content: '';
@@ -231,11 +182,7 @@ Tarjeta de Crédito
     right: 20px;
     width: 60px;
 
-    svg {
-      width: 100%;
-      height: auto;
-      fill: #fff;
-    }
+
   }
 
   .front {
@@ -249,7 +196,6 @@ Tarjeta de Crédito
     .logo {
       top: 185px;
     }
-
   }
 
   .chip {
@@ -258,7 +204,8 @@ Tarjeta de Crédito
     height: 45px;
     top: 20px;
     left: 20px;
-    background: linear-gradient(135deg, hsl(269,54%,87%) 0%,hsl(200,64%,89%) 44%,hsl(18,55%,94%) 100%);;
+    background: linear-gradient(135deg, #fff(269, 54%, 87%) 0%, #3d8291(200, 64%, 89%) 44%, #fff(18, 55%, 94%) 100%);
+    ;
     border-radius: 8px;
 
     &::before {
@@ -269,7 +216,7 @@ Tarjeta de Crédito
       left: 0;
       right: 0;
       margin: auto;
-      border: 4px solid hsla(0, 0, 50, .1);
+      border: 4px solid #000(0, 0, 50, .1);
       width: 80%;
       height: 70%;
       border-radius: 5px;
@@ -277,7 +224,7 @@ Tarjeta de Crédito
   }
 
   .strip {
-    background: linear-gradient(135deg, hsl(0, 0, 25%), hsl(0, 0, 10%));
+    background: linear-gradient(135deg, #808080(97, 96, 96)(0, 0, 25%), #000(0, 0, 10%));
     position: absolute;
     width: 100%;
     height: 50px;
@@ -302,6 +249,8 @@ Tarjeta de Crédito
     opacity: 0.5;
     display: block;
     margin-bottom: 3px;
+    margin: -25px 0 14px;
+    color: rgb(255, 255, 255);
   }
 
   .card-holder,
@@ -319,26 +268,4 @@ Tarjeta de Crédito
     left: auto;
     right: 20px;
   }
-
-  .ccv {
-    height: 36px;
-    background: #fff;
-    width: 91%;
-    border-radius: 5px;
-    top: 110px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: 0 auto;
-    color: #000;
-    text-align: right;
-    padding: 10px;
-
-    label {
-      margin: -25px 0 14px;
-      color: #fff;
-    }
-  }
-
-
 }

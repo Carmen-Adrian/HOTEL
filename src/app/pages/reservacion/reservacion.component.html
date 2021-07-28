@@ -1,174 +1,148 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="assets/img/hotel.ico">
-    <title>Hotel Posada Del Ángel Villahermosa</title>
-    <link rel="stylesheet" href="reservacion.component.css">
-             
-  </head>
-  <body  >
-    <div class="smart-wrap" >
-      <div class="smart-forms smart-container wrap-2" >
-       
-        <div class="form-header header-primary" >
-          <h4><i class="fa fa-calendar"></i>Reservaciones en minutos</h4>
-        </div>
-         
-        <form method="post" action="/" id="contact">
-          <div class="form-body">
-            <div class="section">
-              <label for="guestname" class="field-label">Ingrese Su Nombre Por Favor</label>
-              <label for="guestname" class="field prepend-icon">
-                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="">
-                <span class="field-icon"><i class="fa fa-user"></i></span>  
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/hotel.ico">
+  <title>Hotel Posada Del Ángel Villahermosa</title>
+  <link rel="stylesheet" href="reservacion.component.css">
+
+</head>
+
+<body>
+  <div class="smart-wrap">
+    <div class="smart-forms smart-container wrap-2">
+
+      <div class="form-header header-primary">
+        <h4><i class="fa fa-calendar"></i>Reservaciones en minutos</h4>
+      </div>
+      <form method="post" action="/" id="contact">
+        <div class="form-body">
+          <div class="section">
+            <label for="guestname" class="field-label">Ingrese Su Nombre Por Favor</label>
+            <label for="guestname" class="field prepend-icon">
+              <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="">
+              <span class="field-icon"><i class="fa fa-user"></i></span>
+            </label>
+          </div>
+
+          <div class="frm-row">
+            <div class="section colm colm6">
+              <label for="guestemail" class="field-label">Correo Electronico</label>
+              <label for="guestemail" class="field prepend-icon">
+                <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="">
+                <span class="field-icon"><i class="fa fa-envelope"></i></span>
               </label>
             </div>
-                           
-            <div class="frm-row">
-              <div class="section colm colm6">
-                <label for="guestemail" class="field-label">Correo Electronico</label>
-                <label for="guestemail" class="field prepend-icon">
-                  <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="">
-                  <span class="field-icon"><i class="fa fa-envelope"></i></span>  
-                </label>
-              </div>
-               
-              <div class="section colm colm6">
-                <label for="guestelephone" class="field-label">Numero Telefonico</label>
-                <label for="guestelephone" class="field prepend-icon">
-                  <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="">
-                  <span class="field-icon"><i class="fa fa-phone-square"></i></span>  
-                </label>
-              </div>
+
+            <div class="section colm colm6">
+              <label for="guestelephone" class="field-label">Numero Telefonico</label>
+              <label for="guestelephone" class="field prepend-icon">
+                <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="">
+                <span class="field-icon"><i class="fa fa-phone-square"></i></span>
+              </label>
             </div>
-             
-            <div class="frm-row">
-              <div class="section colm colm6">
-                <label for="adults" class="field-label">Numero de personas adultas</label>
-                <label for="adults" class="field prepend-icon">
-                  <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="">
-                  <span class="field-icon"><i class="fa fa-users"></i></span>  
-                </label>
-              </div>
-               
-              <div class="section colm colm6">
-                <label for="children" class="field-label">Numero de Niños</label>
-                <label for="children" class="field prepend-icon">
-                  <input type="number" id="children" name="children" class="gui-input" required="" placeholder="">
-                  <span class="field-icon"><i class="fa fa-users"></i></span>  
-                </label>
-              </div>
-            </div>
-             
-            <div class="frm-row">
-              <div class="section colm colm6">
-                <label for="checkin" class="field-label">Dia de llegada</label>
-                <label for="checkin" class="field prepend-icon">
-                  <input  type="date" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
-                  <span class="field-icon"><i class="fa fa-calendar"></i></span>  
-                </label>
-              </div>
-               
-              <div class="section colm colm6">
-                <label for="checkout" class="field-label">Dia de salida</label>
-                <label for="checkout" class="field prepend-icon">
-                  <input type="date" id="checkout" name="checkout" class="gui-input" required="" placeholder="mm/dd/yyyy">
-                  <span class="field-icon"><i class="fa fa-calendar"></i></span>  
-                </label>
-              </div>
+          </div>
+
+          <div class="frm-row">
+            <div class="section colm colm6">
+              <label for="adults" class="field-label">Numero de personas adultas</label>
+              <label for="adults" class="field prepend-icon">
+                <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="">
+                <span class="field-icon"><i class="fa fa-users"></i></span>
+              </label>
             </div>
 
-            <div  class="spacer-t20 spacer-b30">
-              <label for="estadia">Tipo de Habitacion</label>
-              <select for="checkout" class="gui-input">
-                <option value="Individual" label="Individual">
-                <option value="King size" label="King size">
-                <option value="Doble" label="Doble">
-                <option value="Triple" label="Triple">    
-              </select>
+            <div class="section colm colm6">
+              <label for="children" class="field-label">Numero de Niños</label>
+              <label for="children" class="field prepend-icon">
+                <input type="number" id="children" name="children" class="gui-input" required="" placeholder="">
+                <span class="field-icon"><i class="fa fa-users"></i></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="frm-row">
+            <div class="section colm colm6">
+              <label for="checkin" class="field-label">Dia de llegada</label>
+              <label for="checkin" class="field prepend-icon">
+                <input type="date" id="checkin" name="checkin" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                <span class="field-icon"><i class="fa fa-calendar"></i></span>
+              </label>
             </div>
 
-            <div  class="spacer-t20 spacer-b30">
-              <label for="estadia">Metodo de Pago</label>
-              <select for="checkout" class="gui-input">
-                
-                <option value="Tarjeta de credito" label="Tarjeta de credito">              
-                <option value="Tarjeta de debito" label="Tarjeta de debito" >
-                <option value="Paypal" label="Paypal">   
-              </select>
+            <div class="section colm colm6">
+              <label for="checkout" class="field-label">Dia de salida</label>
+              <label for="checkout" class="field prepend-icon">
+                <input type="date" id="checkout" name="checkout" class="gui-input" required="" placeholder="mm/dd/yyyy">
+                <span class="field-icon"><i class="fa fa-calendar"></i></span>
+              </label>
             </div>
-             
-            <div class="spacer-t20 spacer-b30">
-              <div class="tagline"><span>Por favor responda estas preguntas para una estadía placentera</span></div>
-            </div>
-             
-            <div class="frm-row">
-              <div class="option-group field">
-               
-                <div class="section colm colm6">
-                  <label class="switch">
-                    <input type="checkbox" name="switch1" id="switch1" value="switch1">
-                    <span class="switch-label" data-on="SI" data-off="NO"></span>
-                    <span>¿Vas a traer una mascota?</span>
-                  </label>
-                </div>
-                     
-                <div class="section colm colm6">
-                  <label class="switch">
-                    <input type="checkbox" name="switch2" id="switch2" value="switch2">
-                    <span class="switch-label" data-on="SI" data-off="NO"></span>
-                    <span>¿Necesitas que te recojamos?</span>
-                  </label>
-                </div>
-                           
-              </div>
-            </div>
-             
-             
-             
-                                                
           </div>
-          <div class="form-footer">
-            <button type="submit" class="button btn-primary">Siguiente</button>
-            <button type="reset" class="button">Cancelar</button>
+          <br>
+          <br>
+          <div class="spacer-t20 spacer-b30">
+            
+            <label for="estadia" >Tipo de Habitacion</label>
+            <select for="checkout" class="gui-input">
+              <option value="Individual" label="Individual">
+              <option value="King size" label="King size">
+              <option value="Doble" label="Doble">
+              <option value="Triple" label="Triple">
+            </select>
           </div>
-           
-        </form>
-         
-      </div>
+          <br>
+          <div class="spacer-t20 spacer-b30">
+            <label for="estadia">Metodo de Pago</label>
+            <select for="checkout" class="gui-input">
+              <option value="Tarjeta de credito" label="Tarjeta de credito">
+              <option value="Tarjeta de debito" label="Tarjeta de debito">
+              <option value="Paypal" label="Paypal">
+            </select>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="button btn-primary">Siguiente</button>
+          <button type="reset" class="button">Cancelar</button>
+        </div>
+
+      </form>
+
     </div>
-    <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui-custom.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="assets/js/additional-methods.min.js"></script>
+  </div>
+  <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-ui-custom.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="assets/js/additional-methods.min.js"></script>
 
-<script type="text/javascript">
-  $("#booking-form").validate();
-   
-  $("#checkin").datepicker({
-          defaultDate: "+1w",
-          changeMonth: false,
-          numberOfMonths: 1,
-          prevText: '<i class="fa fa-chevron-left"></i>',
-          nextText: '<i class="fa fa-chevron-right"></i>',
-          onClose: function( selectedDate ) {
-                  $( "#checkout" ).datepicker( "option", "minDate", selectedDate );
-          }
-  });
-   
-  $("#checkout").datepicker({
-          defaultDate: "+1w",
-          changeMonth: false,
-          numberOfMonths: 1,
-          prevText: '<i class="fa fa-chevron-left"></i>',
-          nextText: '<i class="fa fa-chevron-right"></i>',                    
-          onClose: function( selectedDate ) {
-                  $( "#checkin" ).datepicker( "option", "maxDate", selectedDate );
-          }
-  });
+  <script type="text/javascript">
+    $("#booking-form").validate();
+
+    $("#checkin").datepicker({
+      defaultDate: "+1w",
+      changeMonth: false,
+      numberOfMonths: 1,
+      prevText: '<i class="fa fa-chevron-left"></i>',
+      nextText: '<i class="fa fa-chevron-right"></i>',
+      onClose: function (selectedDate) {
+        $("#checkout").datepicker("option", "minDate", selectedDate);
+      }
+    });
+
+    $("#checkout").datepicker({
+      defaultDate: "+1w",
+      changeMonth: false,
+      numberOfMonths: 1,
+      prevText: '<i class="fa fa-chevron-left"></i>',
+      nextText: '<i class="fa fa-chevron-right"></i>',
+      onClose: function (selectedDate) {
+        $("#checkin").datepicker("option", "maxDate", selectedDate);
+      }
+    });
+
   </script>
 
-  </body>
+</body>
+
 </html>
