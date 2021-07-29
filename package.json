@@ -22,6 +22,8 @@
     "@capacitor/angular": "^1.0.3",
     "@capacitor/core": "^3.1.2",
     "@capacitor/electron": "^2.4.8",
+    "cordova-plugin-app-version": "^0.1.12",
+    "cordova-plugin-navigationbar": "^1.0.31",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

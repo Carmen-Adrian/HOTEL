@@ -18,10 +18,10 @@
               <h2>Sign In</h2>
               <input type="text" name="" placeholder="Username" />
               <input type="password" name="" placeholder="Password" />
-              <input type="submit" name="" value="Login" routerLink="/reservacion"/>
+              <input type="submit" name="" value="Login" [routerLink]="['/reservacion']" >
               <p >
                 Don't have an account ?
-                <a routerLink="/sign-up" class="rk-menu__link">Sign Up.</a>
+                <a  [routerLink]="['/sign-up']" class="rk-menu__link">Sign Up.</a>
               </p>
             </form>
           </div>
