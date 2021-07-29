@@ -14,6 +14,7 @@
     "@angular/common": "~12.1.0-",
     "@angular/compiler": "~12.1.0-",
     "@angular/core": "~12.1.0-",
+    "@angular/fire": "^6.1.5",
     "@angular/forms": "~12.1.0-",
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
@@ -24,6 +25,7 @@
     "@capacitor/electron": "^2.4.8",
     "cordova-plugin-app-version": "^0.1.12",
     "cordova-plugin-navigationbar": "^1.0.31",
+    "firebase": "^8.8.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -41,6 +43,25 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.2"
-  }
+    "typescript": "~4.3.2",
+    "@angular-devkit/architect": ">= 0.900 < 0.1300",
+    "firebase-tools": "^8.0.0 || ^9.0.0",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "open": "^7.0.3",
+    "jsonc-parser": "^3.0.0"
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carmen-Adrian/HOTEL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carmen-Adrian/HOTEL/issues"
+  },
+  "homepage": "https://github.com/Carmen-Adrian/HOTEL#readme"
 }

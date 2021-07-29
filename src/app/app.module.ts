@@ -14,7 +14,12 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HttpClientModule} from '@angular/common/http';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { MetodoPagoComponent } from './pages/metodo-pago/metodo-pago.component';
-import { UbicacionComponent } from './pages/ubicacion/ubicacion.component'
+import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
+import { CrudComponent } from './pages/crud/crud.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +33,15 @@ import { UbicacionComponent } from './pages/ubicacion/ubicacion.component'
     SignUpComponent,
     MetodoPagoComponent,
     UbicacionComponent,
+    CrudComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]

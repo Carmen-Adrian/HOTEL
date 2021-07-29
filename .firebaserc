@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hotel-ac0cd": {
+      "hosting": {
+        "HOTEL": [
+          "hotel-ac0cd"
+        ]
+      }
+    }
+  }
+}
