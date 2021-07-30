@@ -1,14 +1,6 @@
-import { Component, NgZone, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { Component} from '@angular/core';
 import { AuthService } from '../services/auth.service';
-import { User } from 'src/app/shared/user.interface';
-import { Router } from '@angular/router';
-import firebase from "firebase/app";
-import "firebase/auth";
 
-
-import { FormBuilder, Validators } from '@angular/forms';
-import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
 
 
 
@@ -17,10 +9,10 @@ import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent{
   email!: string;
   password!: string;
-  constructor() { }
+  constructor( public authService : AuthService) { }
 
 
   ngOnInit() {
@@ -28,8 +20,10 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.email);
-    console.log(this.password);
+    const user = {email: this.email, password: this.password};
+    this.authService.login(user).subscribe(data =>{
+      console.log(data)
+    });
   }
 }
 

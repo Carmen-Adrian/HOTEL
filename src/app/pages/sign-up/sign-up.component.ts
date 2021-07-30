@@ -17,14 +17,16 @@ import { User } from 'src/app/shared/user.interface';
 export class SignUpComponent implements OnInit {
   email!: string;
   password!: string;  
-  constructor( ) { }
+  constructor( public authService : AuthService) { }
 
   ngOnInit(): void {
   }
 
-  registro(){
-    console.log(this.email);
-    console.log(this.password);
+  registro() {
+    const user = {email: this.email, password: this.password};
+    this.authService.login(user).subscribe(data =>{
+      console.log(data)
+    });
   }
 
 

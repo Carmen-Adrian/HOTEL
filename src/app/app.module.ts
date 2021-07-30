@@ -21,6 +21,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { FormsModule} from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 
 @NgModule({
