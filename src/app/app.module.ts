@@ -16,10 +16,11 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { MetodoPagoComponent } from './pages/metodo-pago/metodo-pago.component';
 import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
 import { CrudComponent } from './pages/crud/crud.component'
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgControl, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FormsModule} from '@angular/forms';
 
 
 @NgModule({

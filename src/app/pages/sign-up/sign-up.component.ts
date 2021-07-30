@@ -15,27 +15,17 @@ import { User } from 'src/app/shared/user.interface';
   providers : [AuthService],
 })
 export class SignUpComponent implements OnInit {
-  
-  signinForm= new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
-  });
-   
-  constructor( private authSvc: AuthService, private router: Router) { }
+  email!: string;
+  password!: string;  
+  constructor( ) { }
 
   ngOnInit(): void {
   }
 
- 
-
-  async onSignin() {
-    const { email, password } = this.signinForm.value;
-    this.authSvc.signin(email,password)
+  registro(){
+    console.log(this.email);
+    console.log(this.password);
   }
 
-  private checkUserIsVerified(user: User) {
-    if (user && user.emailVerified) {
-      this.router.navigate(['/login']);
-    }
-  }
+
 }

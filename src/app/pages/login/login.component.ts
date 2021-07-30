@@ -1,35 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { User } from 'src/app/shared/user.interface';
 import { Router } from '@angular/router';
+import firebase from "firebase/app";
+import "firebase/auth";
+
+
+import { FormBuilder, Validators } from '@angular/forms';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
-  providers: [AuthService],
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-loginForm= new FormGroup({
-  email: new FormControl(''),
-  password: new FormControl(''),
-});
-  constructor( private authSvc: AuthService, private router: Router) { }
+  email!: string;
+  password!: string;
+  constructor() { }
 
-  ngOnInit(){
-    
+
+  ngOnInit() {
+
   }
 
-  async onlogin() {
-    const { email, password } = this.loginForm.value;
-    this.authSvc.login(email, password);
-      
-  }
-
-  private checkUserIsVerified(user: User) {
-    if (user && user.emailVerified) {
-      this.router.navigate(['/reservacion']);
-    } 
+  login() {
+    console.log(this.email);
+    console.log(this.password);
   }
 }
+
+ 
+  

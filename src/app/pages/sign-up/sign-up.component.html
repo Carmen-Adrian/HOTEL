@@ -10,17 +10,17 @@
 
 <body>
   <div class="container">
-    <form [formGroup]="signinForm" (ngSubmit)="onSignin">
+    <form >
       <div class="title"><h1 id="title-text">Bienvenido<br>Crea una cuenta</h1></div>
   
       <div class="input-div"><p>Correo:</p>
-        <input type="email" name="email"formControlName="email" />
+        <input type="email" name="email" placeholder="email" required="required"/>
       </div>
       <div class="input-div"><p>Contraseña:</p>
-        <input type="password" name="password" formControlName="password" />
+        <input type="password" name="password" placeholder="password" required="required" />
       </div>
      
-      <button id="button" [routerLink]="['/login']" >Sign In</button>
+      <button id="button" routerLink="/login"  (click)="registro">Sign In</button>
     </form>
   </div>
     <script src="/src/assets/js/jquery-3.3.1.min.js"></script>
