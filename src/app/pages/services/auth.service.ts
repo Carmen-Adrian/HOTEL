@@ -13,6 +13,7 @@ import * as firebase from 'firebase/app';
 @Injectable({ providedIn: 'root' })
 export class AuthService extends Validator {
   user$: Observable<User | null | undefined>;
+  
   constructor(public afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
     super();
     this.user$ = this.afAuth.authState.pipe(
@@ -44,10 +45,22 @@ export class AuthService extends Validator {
         email,
         password
       );
+      await this.sendVerificationEmail();
       return user;
     } catch (error) {
       console.log(error);
     }
+  }
+
+  async sendVerificationEmail():Promise<void>{
+    try{
+      return (await this.afAuth.currentUser).sendEmailVerification;
+    } catch (error){
+      console.log('Error ', error)
+    }
+  }
+  isEmailVerified(user: User): boolean{
+    return user.emailVerified=== true ? true : false;
   }
 
   private updateUserData(user: User) {
