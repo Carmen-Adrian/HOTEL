@@ -15,6 +15,7 @@ import { User } from 'src/app/shared/user.interface';
   providers : [AuthService],
 })
 export class SignUpComponent implements OnInit {
+  
   signinForm= new FormGroup({
     email: new FormControl(''),
     password: new FormControl(''),
@@ -29,14 +30,7 @@ export class SignUpComponent implements OnInit {
 
   async onSignin() {
     const { email, password } = this.signinForm.value;
-    try {
-      const user = await this.authSvc.signin(email, password);
-      if (user) {
-        this.checkUserIsVerified(user);
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    this.authSvc.signin(email,password)
   }
 
   private checkUserIsVerified(user: User) {

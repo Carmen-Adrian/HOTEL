@@ -21,16 +21,10 @@ loginForm= new FormGroup({
     
   }
 
-  async onLogin() {
+  async onlogin() {
     const { email, password } = this.loginForm.value;
-    try {
-      const user = await this.authSvc.login(email, password);
-      if (user) {
-        this.checkUserIsVerified(user);
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    this.authSvc.login(email, password);
+      
   }
 
   private checkUserIsVerified(user: User) {

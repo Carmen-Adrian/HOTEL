@@ -5,17 +5,15 @@ import { User } from 'src/app/shared/user.interface';
 import { Observable, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import {AngularFirestore,AngularFirestoreDocument,} from '@angular/fire/firestore';
-import { Validator } from '../helper/Validator';
 import { Router } from '@angular/router';
 import * as firebase from 'firebase/app';
 
 
 @Injectable({ providedIn: 'root' })
-export class AuthService extends Validator {
-  user$: Observable<User | null | undefined>;
+export class AuthService  {
+  user$: Observable<User | null | undefined >;
   
   constructor(public afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) {
-    super();
     this.user$ = this.afAuth.authState.pipe(
       switchMap((user) => {
         if (user) {
@@ -26,35 +24,25 @@ export class AuthService extends Validator {
     );
   }
 
-  async login(email: string, password: string): Promise<User> {
-    try {
+  async login(email: string, password: string){
       const { user } = await this.afAuth.signInWithEmailAndPassword(
         email,
         password
       );
-      this.updateUserData(user);
       return user;
-    } catch (error) {
-      console.log(error);
-    }
   }
 
-  async signin(email: string, password: string): Promise<User> {
-    try {
+  async signin(email: string, password: string) {
       const { user } = await this.afAuth.createUserWithEmailAndPassword(
         email,
         password
       );
-      await this.sendVerificationEmail();
       return user;
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   async sendVerificationEmail():Promise<void>{
     try{
-      return (await this.afAuth.currentUser).sendEmailVerification;
+      //return (await this.afAuth.currentUser).sendEmailVerification;
     } catch (error){
       console.log('Error ', error)
     }
