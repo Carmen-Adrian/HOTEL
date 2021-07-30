@@ -19,6 +19,7 @@ import { CrudComponent } from './pages/crud/crud.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
 @NgModule({
@@ -34,7 +35,6 @@ import { environment } from 'src/environments/environment';
     MetodoPagoComponent,
     UbicacionComponent,
     CrudComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -42,6 +42,7 @@ import { environment } from 'src/environments/environment';
     HttpClientModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

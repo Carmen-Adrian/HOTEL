@@ -3,11 +3,16 @@ import { NgModule } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
+import { User } from 'src/app/shared/user.interface';
+
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css']
+  styleUrls: ['./sign-up.component.css'],
+  providers : [AuthService],
 })
 export class SignUpComponent implements OnInit {
   signinForm= new FormGroup({
@@ -15,18 +20,28 @@ export class SignUpComponent implements OnInit {
     password: new FormControl(''),
   });
    
-  constructor() { }
+  constructor( private authSvc: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  onSignin(){
-    console.timeLog('Form->', this.signinForm.value);
-  }
  
 
+  async onSignin() {
+    const { email, password } = this.signinForm.value;
+    try {
+      const user = await this.authSvc.signin(email, password);
+      if (user) {
+        this.checkUserIsVerified(user);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  private checkUserIsVerified(user: User) {
+    if (user && user.emailVerified) {
+      this.router.navigate(['/login']);
+    }
+  }
 }
-
-
-
-
