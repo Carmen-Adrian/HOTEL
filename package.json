@@ -26,7 +26,7 @@
     "bootstrap-icons": "^1.5.0",
     "cordova-plugin-app-version": "^0.1.12",
     "cordova-plugin-navigationbar": "^1.0.31",
-    "firebase": "^8.8.0",
+    "firebase": "^8.8.1",
     "ngx-cookie-service": "^12.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

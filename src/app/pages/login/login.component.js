@@ -1,4 +1,4 @@
-function registar(){
+function registrar(){
     var email = document.getElementById('email').value;
    var contraseña = document.getElementById('contraseña').value;
    
