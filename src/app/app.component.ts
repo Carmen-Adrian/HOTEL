@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InfoPaginaService } from './services/info-pagina.service';
+
 import { Plugins } from '@capacitor/core';
 
 
@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'HOTEL';
   
 
-  constructor (public  _infoPaginaService: InfoPaginaService
+  constructor (
     ){
 
   }
