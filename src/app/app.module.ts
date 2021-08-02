@@ -8,7 +8,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
-import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { MetodoPagoComponent } from './pages/metodo-pago/metodo-pago.component';
 import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
 import { CrudComponent } from './pages/crud/crud.component'
@@ -18,8 +17,10 @@ import { environment } from 'src/environments/environment';
 
 import { FormsModule} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import * as firebase from 'firebase';
 import { AngularFireModule } from '@angular/fire';
+import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -30,17 +31,21 @@ import { AngularFireModule } from '@angular/fire';
     FooterComponent,
     HomeComponent,
     ContactoComponent,
-    SignUpComponent,
+   
     MetodoPagoComponent,
     UbicacionComponent,
     CrudComponent,
+    LoginScreenComponent,
+    RegistroComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/src/assets/img/hotel.ico">
   <title>Hotel Posada Del Ángel Villahermosa</title>
-  <link rel="stylesheet" href="login.component.css">
+  <link rel="stylesheet" href="registro.component.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="login.component.css">
+       
         
 </head>
-
-<h3 align="center"> Inicio de Sesion</h3>
+<h3 align="center"> Registro</h3>
 <body>
   <form>
     <div class="form-group">
@@ -23,7 +22,8 @@
       <label for="exampleInputPassword1">Contraseña</label>
       <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" #pass>
     </div>
-    <button type="button" class="btn btn-primary btn-block"  (click)="auth.iniciarConEmailPass(user.value, pass.value)">Iniciar Sesion</button>
+    <button type="button" class="btn btn-primary btn-block" (click)="auth.registro(user.value, pass.value)">Registrar</button>
+    
   </form>
   
   
