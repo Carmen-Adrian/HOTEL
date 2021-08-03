@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LoginAdministradorComponent } from './pages/login-administrador/login-administrador.component';
 import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MetodoPagoComponent } from './pages/metodo-pago/metodo-pago.component';
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path: 'metodo-pago', component: MetodoPagoComponent},
   {path: 'ubicacion', component: UbicacionComponent},
   {path: 'login-screen', component: LoginScreenComponent},
-
+  {path: 'login-administrador', component: LoginAdministradorComponent},
   {path: '**',  pathMatch: 'full' , redirectTo: 'home' }
 ];
 

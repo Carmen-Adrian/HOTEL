@@ -21,7 +21,8 @@ import { AngularFireModule } from '@angular/fire';
 import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore'; 
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
+import { LoginAdministradorComponent } from './pages/login-administrador/login-administrador.component'; 
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestor
     CrudComponent,
     LoginScreenComponent,
     RegistroComponent,
+    LoginAdministradorComponent,
     
     
   ],
@@ -47,6 +49,7 @@ import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestor
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+  
   
   ],
   providers: [],

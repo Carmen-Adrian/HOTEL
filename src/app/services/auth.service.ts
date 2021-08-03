@@ -36,6 +36,20 @@ export class AuthService {
         this.router.navigate(['/reservacion']);
         this.cerrarSesion();
       } else 
+      this.router.navigate(['/reservacion']);
+      console.log(user)
+    }).catch(()=>{
+     
+    });
+  }
+
+  iniciarConEmailPass1(email:string,pass:string){
+    return this.xauth.signInWithEmailAndPassword(email,pass).then((user:any)=>{
+      if(user && user.user.emailVerified===false){
+        alert('por favor verifica tu correo');
+        this.router.navigate(['/reservacion']);
+        this.cerrarSesion();
+      } else 
       this.router.navigate(['/home']);
       console.log(user)
     }).catch(()=>{
