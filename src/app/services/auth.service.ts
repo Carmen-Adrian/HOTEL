@@ -4,6 +4,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuth  } from '@angular/fire/auth';
 import * as firebase from 'firebase';
 import { __await } from 'tslib';
+import { Router } from '@angular/router';
 
 
 
@@ -13,11 +14,13 @@ import { __await } from 'tslib';
 export class AuthService {
 
   public isOk = false;
+  router: any;
 
   constructor( private xauth: AngularFireAuth) { 
   this.xauth.authState.subscribe(user =>{
     if(user){
      this.isOk= true;
+     
     }else{
       this.isOk=false;
     }
@@ -26,17 +29,18 @@ export class AuthService {
 
   }
 
-  iniciarConEmailPass( email:string,pass:string){
-    return this.xauth.signInWithEmailAndPassword(email, pass).then ((user:any)=>{
-    if(user.user.emailVerified==false){
-    alert('Por favor Verifique su correo')
-    this.cerrarSesion()
-}
-      console.log(user);
+  iniciarConEmailPass(email:string,pass:string){
+    return this.xauth.signInWithEmailAndPassword(email,pass).then((user:any)=>{
+      if(user && user.user.emailVerified===false){
+        alert('por favor verifica tu correo');
+        this.router.navigate(['/reservacion']);
+        this.cerrarSesion();
+      } else 
+      this.router.navigate(['/home']);
+      console.log(user)
     }).catch(()=>{
- alert('error');
+     
     });
-
   }
 
   registro(email:string, pass:string){

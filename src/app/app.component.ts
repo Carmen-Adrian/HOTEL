@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Plugins } from '@capacitor/core';
+import "firebase/firestore";
 
 
 @Component({

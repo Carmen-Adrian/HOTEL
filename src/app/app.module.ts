@@ -21,6 +21,7 @@ import { AngularFireModule } from '@angular/fire';
 import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore'; 
 
 @NgModule({
   declarations: [
@@ -38,13 +39,14 @@ import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
     LoginScreenComponent,
     RegistroComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
   
   ],
   providers: [],

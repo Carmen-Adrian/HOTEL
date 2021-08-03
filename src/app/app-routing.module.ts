@@ -18,6 +18,7 @@ const routes: Routes = [
   {path: 'metodo-pago', component: MetodoPagoComponent},
   {path: 'ubicacion', component: UbicacionComponent},
   {path: 'login-screen', component: LoginScreenComponent},
+
   {path: '**',  pathMatch: 'full' , redirectTo: 'home' }
 ];
 
