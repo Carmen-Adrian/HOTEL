@@ -8,7 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
-import { MetodoPagoComponent } from './pages/metodo-pago/metodo-pago.component';
+
 import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
 import { CrudComponent } from './pages/crud/crud.component'
 import { ReactiveFormsModule } from '@angular/forms';
@@ -34,7 +34,7 @@ import { LoginAdministradorComponent } from './pages/login-administrador/login-a
     HomeComponent,
     ContactoComponent,
    
-    MetodoPagoComponent,
+ 
     UbicacionComponent,
     CrudComponent,
     LoginScreenComponent,

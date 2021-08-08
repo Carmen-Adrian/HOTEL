@@ -1,0 +1,86 @@
+[debug] [2021-08-03T06:24:00.673Z] ----------------------------------------------------------------------
+[debug] [2021-08-03T06:24:00.679Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADRIAN99_MM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-08-03T06:24:00.680Z] CLI Version:   9.16.0
+[debug] [2021-08-03T06:24:00.680Z] Platform:      win32
+[debug] [2021-08-03T06:24:00.680Z] Node Version:  v14.17.3
+[debug] [2021-08-03T06:24:00.682Z] Time:          Tue Aug 03 2021 01:24:00 GMT-0500 (hora de verano central)
+[debug] [2021-08-03T06:24:00.683Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-03T06:24:00.849Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-03T06:24:00.850Z] > authorizing via signed-in user (carmenmirand292@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project hotel-ac0cd. This may result in unexpected behavior. 
+[debug] [2021-08-03T06:24:00.889Z] [hub] writing locator at C:\Users\ADRIAN~1\AppData\Local\Temp\hub-hotel-ac0cd.json
+[debug] [2021-08-03T06:24:01.011Z] > refreshing access token with scopes: []
+[debug] [2021-08-03T06:24:01.014Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-03T06:24:01.298Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 03 Aug 2021 06:24:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-03T06:24:01.344Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hotel-ac0cd/sites 
+[debug] [2021-08-03T06:24:01.857Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hotel-ac0cd/sites 200
+[debug] [2021-08-03T06:24:01.858Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hotel-ac0cd/sites {"sites":[{"name":"projects/847218257875/sites/hotel-ac0cd","defaultUrl":"https://hotel-ac0cd.web.app","appId":"1:847218257875:web:8f3d385902380738088926","type":"DEFAULT_SITE"}]}
+[debug] [2021-08-03T06:24:01.861Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hotel-ac0cd/webApps/1:847218257875:web:8f3d385902380738088926/config [none]
+[debug] [2021-08-03T06:24:02.367Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hotel-ac0cd/webApps/1:847218257875:web:8f3d385902380738088926/config 200
+[debug] [2021-08-03T06:24:02.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hotel-ac0cd/webApps/1:847218257875:web:8f3d385902380738088926/config {"projectId":"hotel-ac0cd","appId":"1:847218257875:web:8f3d385902380738088926","databaseURL":"https://hotel-ac0cd-default-rtdb.firebaseio.com","storageBucket":"hotel-ac0cd.appspot.com","locationId":"us-central","apiKey":"AIzaSyAVhHdmgnhkr9V-Z-sEJZKNhwD2g0GOhsg","authDomain":"hotel-ac0cd.firebaseapp.com","messagingSenderId":"847218257875","measurementId":"G-69YN12FKTL"}
+[info] i  hosting[HOTEL]: Serving hosting files from: dist/HOTEL {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/HOTEL\u001b[22m"}}
+[info] +  hosting[HOTEL]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting[HOTEL]: Serving hosting files from: dist/HOTEL {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/HOTEL\u001b[22m"}}
+[info] +  hosting[HOTEL]: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
+[info] i  hosting[HOTEL]: Serving hosting files from: dist/HOTEL {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/HOTEL\u001b[22m"}}
+[info] +  hosting[HOTEL]: Local server: http://localhost:5006 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5006\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-08-03T06:24:36.553Z] ----------------------------------------------------------------------
+[debug] [2021-08-03T06:24:36.556Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADRIAN99_MM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-08-03T06:24:36.557Z] CLI Version:   9.16.0
+[debug] [2021-08-03T06:24:36.557Z] Platform:      win32
+[debug] [2021-08-03T06:24:36.557Z] Node Version:  v14.17.3
+[debug] [2021-08-03T06:24:36.558Z] Time:          Tue Aug 03 2021 01:24:36 GMT-0500 (hora de verano central)
+[debug] [2021-08-03T06:24:36.558Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-03T06:24:36.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-03T06:24:36.625Z] > authorizing via signed-in user (carmenmirand292@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project hotel-ac0cd. This may result in unexpected behavior. 
+[debug] [2021-08-03T06:24:36.659Z] [hub] writing locator at C:\Users\ADRIAN~1\AppData\Local\Temp\hub-hotel-ac0cd.json
+[debug] [2021-08-03T06:24:36.701Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hotel-ac0cd/sites 
+[debug] [2021-08-03T06:24:37.143Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hotel-ac0cd/sites 200
+[debug] [2021-08-03T06:24:37.143Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hotel-ac0cd/sites {"sites":[{"name":"projects/847218257875/sites/hotel-ac0cd","defaultUrl":"https://hotel-ac0cd.web.app","appId":"1:847218257875:web:8f3d385902380738088926","type":"DEFAULT_SITE"}]}
+[debug] [2021-08-03T06:24:37.144Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hotel-ac0cd/webApps/1:847218257875:web:8f3d385902380738088926/config [none]
+[debug] [2021-08-03T06:24:37.587Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hotel-ac0cd/webApps/1:847218257875:web:8f3d385902380738088926/config 200
+[debug] [2021-08-03T06:24:37.587Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hotel-ac0cd/webApps/1:847218257875:web:8f3d385902380738088926/config {"projectId":"hotel-ac0cd","appId":"1:847218257875:web:8f3d385902380738088926","databaseURL":"https://hotel-ac0cd-default-rtdb.firebaseio.com","storageBucket":"hotel-ac0cd.appspot.com","locationId":"us-central","apiKey":"AIzaSyAVhHdmgnhkr9V-Z-sEJZKNhwD2g0GOhsg","authDomain":"hotel-ac0cd.firebaseapp.com","messagingSenderId":"847218257875","measurementId":"G-69YN12FKTL"}
+[info] i  hosting[HOTEL]: Serving hosting files from: dist/HOTEL {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/HOTEL\u001b[22m"}}
+[info] +  hosting[HOTEL]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting[HOTEL]: Serving hosting files from: dist/HOTEL {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/HOTEL\u001b[22m"}}
+[info] +  hosting[HOTEL]: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
+[info] i  hosting[HOTEL]: Serving hosting files from: dist/HOTEL {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/HOTEL\u001b[22m"}}
+[info] +  hosting[HOTEL]: Local server: http://localhost:5006 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5006\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

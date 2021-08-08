@@ -101,17 +101,64 @@
             </select>
           </div>
           <br>
-          <div class="spacer-t20 spacer-b30">
-            <label for="estadia">Metodo de Pago</label>
-            <select for="checkout" class="gui-input">
-              <option value="Tarjeta de credito" label="Tarjeta de credito">
-              <option value="Tarjeta de debito" label="Tarjeta de debito">
-              <option value="Paypal" label="Paypal">
-            </select>
+  
+
+          <h4 class="mb-3">Pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Tarjeta de credito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de Debito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
           </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="estadia" >Nombre de la tarjeta</label>
+              <input type="text" class="gui-input" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="gui-input" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="gui-input" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="gui-input" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+        
         </div>
         <div class="form-footer">
-          <button type="submit" class="button btn-primary" routerLink="/metodo-pago">Siguiente
+          <button type="submit" class="button btn-primary" >Confirmar Reservacion
           </button>
           <button type="reset" class="button" routerLink="/login">Cancelar</button>
         </div>

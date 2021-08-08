@@ -47,10 +47,10 @@ export class AuthService {
     return this.xauth.signInWithEmailAndPassword(email,pass).then((user:any)=>{
       if(user && user.user.emailVerified===false){
         alert('por favor verifica tu correo');
-        this.router.navigate(['/reservacion']);
+        this.router.navigate(['/home']);
         this.cerrarSesion();
       } else 
-      this.router.navigate(['/home']);
+      this.router.navigate(['/reservacion']);
       console.log(user)
     }).catch(()=>{
      
