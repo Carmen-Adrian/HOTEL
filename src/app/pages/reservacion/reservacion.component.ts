@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './reservacion.component.html',
   styleUrls: ['./reservacion.component.css'] 
 })
-export class ReservacionComponent implements OnInit {
+export class ReservacionComponent {
 
   constructor() { }
 

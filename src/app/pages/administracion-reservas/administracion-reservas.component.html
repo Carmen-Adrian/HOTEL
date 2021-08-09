@@ -4,25 +4,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="reservacion.component.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
   </head>
-  <body   class="ae-container-fluid ae-container-fluid--inner rk-main">
- 
-    <div class="container-fluid" >
-    <div class="container-fluid">
-      <h1 class="display-8" align="center" >RESERVE EN MINUTOS</h1>
+  <body >
+    
+    <div >
+    <div class="container">
+      <h1 class="display-8" align="center">PANEL DE ADMINISTRACION DE RESERVAS</h1>
     </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-            <button id="btnNuevo" class="btn btn-primary" data-toggle="tooltip" title="Nueva Rerseva"><svg class="bi bi-plus-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4a.5.5 0 0 0-1 0v3.5H4a.5.5 0 0 0 0 1h3.5V12a.5.5 0 0 0 1 0V8.5H12a.5.5 0 0 0 0-1H8.5V4z"/></svg> Reserve</button>
+            <button id="btnNuevo" class="btn btn-primary" data-toggle="tooltip" title="Nuevo Producto"><svg class="bi bi-plus-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4a.5.5 0 0 0-1 0v3.5H4a.5.5 0 0 0 0 1h3.5V12a.5.5 0 0 0 1 0V8.5H12a.5.5 0 0 0 0-1H8.5V4z"/></svg> Reserve</button>
               <!--Modal-->
                 <div id="modalAltaEdicion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -69,15 +67,7 @@
                                       </div>
                                       <div class="form-group">
                                         <label>Pago</label>
-                                        <label> tarjeta credito
-                                        <input id="Pago" type="radio" class="form-control"required>
-                                      </label>
-                                      <label> tarjeta debito
-                                        <input id="Pago" type="radio" class="form-control"required>
-                                      </label>
-                                      <label> paypal
-                                        <input id="Pago" type="radio" class="form-control"required>
-                                      </label>
+                                        <input id="Pago" type="text" class="form-control" required>
                                       </div>
                                 </div>
                                 <div class="modal-footer">
@@ -94,7 +84,7 @@
             
         </div>
       </div>
-      <table id="tablaReservas" class="table table-striped" > 
+      <table id="tablaReservas" class="table table-striped"> 
         <thead>
           <tr class="bg-dark text-light">
             <th scope="rowgroup">Nombre</th>
@@ -106,6 +96,7 @@
             <th scope="rowgroup">Dia salidad</th>
             <th scope="rowgroup">Tipo habitacion</th>
             <th scope="rowgroup">Pago</th>
+            <th scope="rowgroup">Editar o Eliminar</th>
           </tr>
         </thead>
       <tbody id="bodyReservas">
@@ -125,7 +116,6 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>
 
-    <script src="reservacion.js"></script>
+    <script src="administracion-reservas.js"></script>
   </body>
 </html>
-

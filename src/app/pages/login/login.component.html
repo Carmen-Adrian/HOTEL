@@ -30,7 +30,7 @@
       <label for="exampleInputPassword1">Contraseña</label>
       <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" #pass>
     </div>
-    <button type="button" class="btn btn-primary btn-block"  (click)="auth.iniciarConEmailPass(user.value, pass.value)">Iniciar Sesion</button>
+    <button type="button" class="btn btn-primary btn-block"  (click)="auth.iniciarConEmailPass(user.value, pass.value)" routerLink="/reservacion">Iniciar Sesion</button>
   </form>
   
   
