@@ -42,15 +42,15 @@
   
   function mostrarReservas({nombre:nombre,correo_electronico:correo_electronico,Num_Telefonico:Num_Telefonico,Num_Pers_Adultas:Num_Pers_Adultas,Num_Niños:Num_Niños,Dia_llegada:Dia_llegada,Dia_salida:Dia_salida,Tipo_Habitacion:Tipo_Habitacion,Pago:Pago}){
     return `
-    <td>${nombre}</td>
-    <td>${correo_electronico}</td>
-    <td>${Num_Telefonico}</td>
-    <td>${Num_Pers_Adultas}</td>
-    <td>${Num_Niños}</td>
-    <td>${Dia_llegada}</td>
-    <td>${Dia_salida}</td>
-    <td>${Tipo_Habitacion}</td>
-    <td>${Pago}</td>
+    <td align="center">${nombre}</td>
+    <td align="center">${correo_electronico}</td>
+    <td align="center" >${Num_Telefonico}</td>
+    <td align="center">${Num_Pers_Adultas}</td>
+    <td align="center"> ${Num_Niños}</td>
+    <td align="center">${Dia_llegada}</td>
+    <td align="center">${Dia_salida}</td>
+    <td align="center">${Tipo_Habitacion}</td>
+    <td align="center">${Pago}</td>
     
     `
   };

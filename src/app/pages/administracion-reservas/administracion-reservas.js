@@ -11,8 +11,9 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  const db = firebase.database();
-  coleccionReservas = db.ref().child('reservas');
+  
+  const db1 = firebase.database();
+  coleccionReservas = db1.ref().child('reservas');
   bodyReservas = $('#bodyReservas').val();
   console.log(bodyReservas);  
   $('form').submit(function(e){
@@ -43,16 +44,16 @@
   const iconoBorrar = '<svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/></svg>';
   function mostrarReservas({nombre:nombre,correo_electronico:correo_electronico,Num_Telefonico:Num_Telefonico,Num_Pers_Adultas:Num_Pers_Adultas,Num_Niños:Num_Niños,Dia_llegada:Dia_llegada,Dia_salida:Dia_salida,Tipo_Habitacion:Tipo_Habitacion,Pago:Pago}){
     return `
-    <td>${nombre}</td>
-    <td>${correo_electronico}</td>
-    <td>${Num_Telefonico}</td>
-    <td>${Num_Pers_Adultas}</td>
-    <td>${Num_Niños}</td>
-    <td>${Dia_llegada}</td>
-    <td>${Dia_salida}</td>
-    <td>${Tipo_Habitacion}</td>
-    <td>${Pago}</td>
-    <td><button class="btnEditar btn btn-secondary" data-toggle="tooltip" title="Editar">${iconoEditar}</button><button class="btnBorrar btn btn-danger" data-toggle="tooltip" title="Borrar">${iconoBorrar}</button></td>
+    <td align="center">${nombre}</td>
+    <td align="center">${correo_electronico}</td>
+    <td align="center" >${Num_Telefonico}</td>
+    <td align="center">${Num_Pers_Adultas}</td>
+    <td align="center"> ${Num_Niños}</td>
+    <td align="center">${Dia_llegada}</td>
+    <td align="center">${Dia_salida}</td>
+    <td align="center">${Tipo_Habitacion}</td>
+    <td align="center">${Pago}</td>
+    <td align="center"><button class="btnEditar btn btn-secondary" data-toggle="tooltip" title="Editar">${iconoEditar}</button><button class="btnBorrar btn btn-danger" data-toggle="tooltip" title="Borrar">${iconoBorrar}</button></td>
     `
   };
   //CHILD_ADDED
