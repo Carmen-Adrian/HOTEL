@@ -11,6 +11,7 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  
   const db = firebase.database();
   coleccionReservas = db.ref().child('reservas');
   bodyReservas = $('#bodyReservas').val();
@@ -39,6 +40,7 @@
     $('form').trigger('reset');
     $('#modalAltaEdicion').modal('hide');
   });
+  
   
   function mostrarReservas({nombre:nombre,correo_electronico:correo_electronico,Num_Telefonico:Num_Telefonico,Num_Pers_Adultas:Num_Pers_Adultas,Num_Niños:Num_Niños,Dia_llegada:Dia_llegada,Dia_salida:Dia_salida,Tipo_Habitacion:Tipo_Habitacion,Pago:Pago}){
     return `
