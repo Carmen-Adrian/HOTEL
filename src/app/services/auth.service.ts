@@ -38,8 +38,10 @@ export class AuthService {
       } else 
       this.router.navigate(['/reservacion']);
       console.log(user)
+      
+
     }).catch(()=>{
-     
+     alert('advertencia');
     });
   }
 
@@ -50,7 +52,7 @@ export class AuthService {
         this.router.navigate(['/home']);
         this.cerrarSesion();
       } else 
-      this.router.navigate(['/reservacion']);
+      this.router.navigate(['/administracion-reservas']);
       console.log(user)
     }).catch(()=>{
      
