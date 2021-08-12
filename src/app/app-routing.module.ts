@@ -12,6 +12,8 @@ import { LoginAdministradorComponent } from './pages/login-administrador/login-a
 import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { ReservacionComponent } from './pages/reservacion/reservacion.component';
+import { ResetComponent } from './pages/reset/reset.component';
 
 import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
 
@@ -29,6 +31,7 @@ const routes: Routes = [
   {path: 'list-reservas', component: ListReservasComponent},
   {path: 'create-reservas', component: CreateReservasComponent},
   {path: 'editReserva/:id', component: CreateReservasComponent},
+  {path: 'reset', component: ResetComponent},
   {path: '**',  pathMatch: 'full' , redirectTo: 'home' }
 ];
 

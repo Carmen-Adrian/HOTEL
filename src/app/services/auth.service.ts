@@ -12,9 +12,11 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
+  
 
   public isOk = false;
   router: any;
+
 
   constructor( private xauth: AngularFireAuth) { 
   this.xauth.authState.subscribe(user =>{
@@ -31,19 +33,21 @@ export class AuthService {
 
   iniciarConEmailPass(email:string,pass:string){
     return this.xauth.signInWithEmailAndPassword(email,pass).then((user:any)=>{
+    
       if(user && user.user.emailVerified===false){
         alert('por favor verifica tu correo');
-        this.router.navigate(['reservacion']);
+        this.router.navigate(['/home']);
         this.cerrarSesion();
+  
       } else 
-      this.router.navigate(['home']);
-      console.log(user)
+      this.router.navigate(['/list-reserva']);
       
-
+      console.log(user)
     }).catch(()=>{
-     alert('advertencia');
+      alert('Ha iniciado Sesion')
     });
   }
+  
 
   iniciarConEmailPass1(email:string,pass:string){
     return this.xauth.signInWithEmailAndPassword(email,pass).then((user:any)=>{
@@ -52,7 +56,7 @@ export class AuthService {
         this.router.navigate(['/home']);
         this.cerrarSesion();
       } else 
-      this.router.navigate(['/administracion-reservas']);
+      this.router.navigate(['/list-reserva']);
       console.log(user)
     }).catch(()=>{
      
@@ -81,5 +85,13 @@ export class AuthService {
      console.log('salio');
     })
   }
+
+  resetpassword(email:string){
+    return this.xauth.sendPasswordResetEmail(email);
+  }
   
 }
+
+
+
+

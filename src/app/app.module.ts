@@ -22,6 +22,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListReservaComponent } from './components_1/list-reserva/list-reserva.component';
 import { CreateReservaComponent } from './components_1/create-reserva/create-reserva.component';
+import { FormsModule } from '@angular/forms';
+import { ResetComponent } from './pages/reset/reset.component';
 
 
 
@@ -41,6 +43,7 @@ import { CreateReservaComponent } from './components_1/create-reserva/create-res
     CreateReservasComponent,
     ListReservaComponent,
     CreateReservaComponent,
+    ResetComponent,
   
 
   ],
@@ -52,7 +55,8 @@ import { CreateReservaComponent } from './components_1/create-reserva/create-res
     AngularFireAuthModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
 
   ],
   providers: [],
