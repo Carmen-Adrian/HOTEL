@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IndividualComponent } from './caracteristicas-habitaciones/individual/individual.component';
 import { CreateReservasComponent } from './components/create-reservas/create-reservas.component';
 import { ListReservasComponent } from './components/list-reservas/list-reservas.component';
 import { CreateReservaComponent } from './components_1/create-reserva/create-reserva.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'create-reservas', component: CreateReservasComponent},
   {path: 'editReserva/:id', component: CreateReservasComponent},
   {path: 'reset', component: ResetComponent},
+  {path: 'individual', component: IndividualComponent},
   {path: '**',  pathMatch: 'full' , redirectTo: 'home' }
 ];
 
