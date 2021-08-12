@@ -24,10 +24,6 @@ import { ListReservaComponent } from './components_1/list-reserva/list-reserva.c
 import { CreateReservaComponent } from './components_1/create-reserva/create-reserva.component';
 import { FormsModule } from '@angular/forms';
 import { ResetComponent } from './pages/reset/reset.component';
-import { IndividualComponent } from './caracteristicas-habitaciones/individual/individual.component';
-import { KingsizeComponent } from './caracteristicas-habitaciones/kingsize/kingsize.component';
-import { DobleComponent } from './caracteristicas-habitaciones/doble/doble.component';
-import { TripleComponent } from './caracteristicas-habitaciones/triple/triple.component';
 
 
 
@@ -48,12 +44,7 @@ import { TripleComponent } from './caracteristicas-habitaciones/triple/triple.co
     ListReservaComponent,
     CreateReservaComponent,
     ResetComponent,
-    IndividualComponent,
-    KingsizeComponent,
-    DobleComponent,
-    TripleComponent,
   
-
   ],
   imports: [
     BrowserModule,
