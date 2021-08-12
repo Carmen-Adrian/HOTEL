@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -12,21 +13,17 @@ export class LoginComponent implements OnInit{
   email: any;
     pass: any;
     public iniciar=true;
-  constructor(  public auth : AuthService) { }
+  constructor(  public auth : AuthService, private router: Router) { }
  
  
  
   ngOnInit() {
   }
 
-    OnsubmitIniciar(){
-      return this.auth.iniciarConEmailPass(this.email, this.pass).then(auth =>{
-        console.log(auth)
-        this.iniciar=false;
-      }).catch(err => console.log(err))
-      
-    }
+  ingresar() {
+    this.router.navigateByUrl('/reservacion');
   }
+}
   
 
 
