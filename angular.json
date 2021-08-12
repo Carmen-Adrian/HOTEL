@@ -30,9 +30,8 @@
               "src/styles.css"
             ],
             "scripts": [
+            
               
-              "src/app/pages/administracion-reservas/administracion-reservas.js",
-              "src/app/pages/reservacion/reservacion.js"
             ]
           },
           "configurations": {
@@ -101,8 +100,8 @@
               "src/styles.css"
             ],
             "scripts": [
-             "src/app/pages/administracion-reservas/administracion-reservas.js",
-             "src/app/pages/reservacion/reservacion.js"
+            
+             
             ]
           }
         },

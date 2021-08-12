@@ -11,15 +11,18 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
-import { FormsModule } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
 import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
 import { LoginAdministradorComponent } from './pages/login-administrador/login-administrador.component';
-import { AdministracionReservasComponent } from './pages/administracion-reservas/administracion-reservas.component';
+import { ListReservasComponent } from './components/list-reservas/list-reservas.component';
+import { CreateReservasComponent } from './components/create-reservas/create-reservas.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { AdministracionReservasComponent } from './pages/administracion-reservas
     LoginScreenComponent,
     RegistroComponent,
     LoginAdministradorComponent,
-    AdministracionReservasComponent,
+    ListReservasComponent,
+    CreateReservasComponent,
+  
+
   ],
   imports: [
     BrowserModule,
@@ -42,7 +48,9 @@ import { AdministracionReservasComponent } from './pages/administracion-reservas
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
 
   ],
   providers: [],

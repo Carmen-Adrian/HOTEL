@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdministracionReservasComponent } from './pages/administracion-reservas/administracion-reservas.component';
+import { CreateReservasComponent } from './components/create-reservas/create-reservas.component';
+import { ListReservasComponent } from './components/list-reservas/list-reservas.component';
+
+
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginAdministradorComponent } from './pages/login-administrador/login-administrador.component';
@@ -16,10 +19,14 @@ const routes: Routes = [
   {path: 'contacto', component: ContactoComponent},
   {path: 'login' , component: LoginComponent},
   {path: 'registro', component: RegistroComponent},
-  {path: 'administracion-reservas', component: AdministracionReservasComponent},
+  
   {path: 'ubicacion', component: UbicacionComponent},
   {path: 'login-screen', component: LoginScreenComponent},
   {path: 'login-administrador', component: LoginAdministradorComponent},
+
+  {path: 'list-reservas', component: ListReservasComponent},
+  {path: 'create-reservas', component: CreateReservasComponent},
+  {path: 'editReserva/:id', component: CreateReservasComponent},
   {path: '**',  pathMatch: 'full' , redirectTo: 'home' }
 ];
 
