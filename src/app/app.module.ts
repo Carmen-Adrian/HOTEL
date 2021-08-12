@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { ReservacionComponent } from './pages/reservacion/reservacion.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -21,6 +20,8 @@ import { ListReservasComponent } from './components/list-reservas/list-reservas.
 import { CreateReservasComponent } from './components/create-reservas/create-reservas.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListReservaComponent } from './components_1/list-reserva/list-reserva.component';
+import { CreateReservaComponent } from './components_1/create-reserva/create-reserva.component';
 
 
 
@@ -28,7 +29,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ReservacionComponent,
     LoginComponent,
     FooterComponent,
     HomeComponent,
@@ -39,6 +39,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginAdministradorComponent,
     ListReservasComponent,
     CreateReservasComponent,
+    ListReservaComponent,
+    CreateReservaComponent,
   
 
   ],

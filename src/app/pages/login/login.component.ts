@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit{
   }
 
   ingresar() {
-    this.router.navigateByUrl('/reservacion');
+    this.router.navigateByUrl('/list-reserva');
   }
 }
   

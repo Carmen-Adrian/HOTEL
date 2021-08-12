@@ -1,0 +1,48 @@
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Reserve en Minutos</span>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-body table-responsive">
+        <span class="h3">Lista Reservaciones</span>
+        <button class="btn btn-dark btn-lg float-right table-responsive" routerLink="/create-reserva">Agregar Reservacion</button>
+        <h5 style="margin-block: 30px;"   *ngIf="reservas.length == 0">No hay reservas por mostrar</h5>
+        <table *ngIf="reservas.length > 0" class="table table-striped mt-5">
+          <thead>
+              <tr> 
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Numero Telefonico</th>
+                <th>Personas Adultas</th>
+                <th>Niños</th>
+                <th>Dia llegada</th>
+                <th>Dia salidad</th>
+                <th>Tipo habitacion</th>
+                <th>Pago</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let reserva of reservas">
+                <td>{{reserva.nombre}}</td>
+                <td>{{reserva.correo}}</td>
+                <td>{{reserva.telefono}}</td>
+                <td>{{reserva.p_adultas}}</td>
+                <td>{{reserva.ninos}}</td>
+                <td>{{reserva.D_llegada}}</td>
+                <td>{{reserva.D_salida}}</td>
+                <td>{{reserva.T_habitacion}}</td>
+                <td>{{reserva.Pago}}</td>
+              </tr>
+            
+          </tbody>
+        </table>
+        <ul>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
